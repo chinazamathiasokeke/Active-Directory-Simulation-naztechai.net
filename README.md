@@ -1,17 +1,17 @@
 
-# Active Directory Simulation – CyberTech Solutions
+# Active Directory Simulation – naztechai
 
-This project is the deployment of a Windows Server Domain Controller (Active Directory) for a company called **CyberTech Solutions**. It includes domain setup, client configuration, OU design, group policies, and access control in an enterprise environment.
+This project is the deployment of a Windows Server Domain Controller (Active Directory) for a company called **naztechai**. It includes domain setup, client configuration, OU design, group policies, and access control in an enterprise environment.
 
 ---
 
 ## Company Structure
 
-**CyberTech Solutions** is a small IT services firm with the following structure:
+**Naztechai** is a small IT services firm with the following structure:
 
 - 1 x Windows Server (AD Domain Controller)
-- 1 x Windows 8 Client PC (Account Department)
-- 1 x Windows 7 Client PC (Legacy Software)
+- 1 x Windows 8 Client PC (HR Department)
+- 1 x Windows 8 Client PC (Digital-Marketing Department)
 
 ---
 
@@ -30,27 +30,27 @@ This project is the deployment of a Windows Server Domain Controller (Active Dir
 ```
 Internet
    ↓
-Router (Gateway: 10.0.5.1)
+Router (Gateway: 10.0.4.1)
    ↓
 Switch
  ┌──────┬─────────────┬──────────────┐
  │      │             │              │
-Server  PC1 (Win 8)   PC2 (Win XP)
+Server  PC1 (Win 8)   PC2 (Win 8)
 ```
 
 | Device        | IP Address      | Role                        |
 |---------------|----------------|-----------------------------|
-| Windows Server| 10.0.5.5  | AD Domain Controller (DC)   |
-| Windows 8 PC  | DHCP    | Client (Accounts)           |
-| Windows XP PC | DHCP    | Legacy Client               |
+| Windows Server| 10.0.4.3  | AD Domain Controller (DC)   |
+| Windows 8 PC  | 10.0.4.5 (DHCP)   | Client (HR)           |
+| Windows 8 PC | 10.0.4.4 (DHCP) | Client (Digital-Marketing)              |
 
 ---
 
 ## Domain Configuration
 
-- **Domain Name**: `cybertech.local`
-- **Server Name**: `CYBERTECH`
-- **Static IP**: `10.0.5.5`
+- **Domain Name**: `Naztechai.net`
+- **Server Name**: `naztechai`
+- **Static IP**: `10.0.4.1`
 - **AD Roles Installed**: AD DS, DNS (DHCP)
 
 ---
@@ -61,12 +61,12 @@ Created using **Active Directory Users and Computers**:
 
 ```
 CyberTech.local
-├── OU: IT Department
-│   └── Users: Alex.IT
-    └── Users: Charles.IT
+├── OU: Digital-Marketing Department
+│   └── Users: Toni.DM
+    
 
-├── OU: Sales
-│   └── Users:
+├── OU: HR Department
+│   └── Users: Ken.HR
 ```
 
 ---
@@ -75,13 +75,13 @@ CyberTech.local
 
 Created and linked using **Group Policy Management Console (gpmc.msc)**:
 
-- **GPO Name**: `DisableRemovableDrives`
-- **Linked to**: OU: IT Department
+- **GPO Name**: `DisablePoweroffRestartoptions`
+- **Linked to**: OU: HR Department
 - **Policy Configured**:
   - `Computer Configuration` > `Administrative Templates` > `System` > `Removable Storage Access`
-  - Set **"All Removable Storage classes: Deny all access"** to **Enabled**
+  - Set **"Remove and prevent all access to shutdown, restart and hibernate commands"** to **Enabled**
 
-Result: USB and external drives are disabled for all users in the **Accounts OU**.
+Result: Command disabled for all users in the **HR OU**.
 
 ---
 
@@ -90,7 +90,7 @@ Result: USB and external drives are disabled for all users in the **Accounts OU*
 - AD Domain Structure
 - GPO Editor Screenshot
 - PC joined to domain
-- Result of denied USB access
+- Result of denied command to shutdown, restart access
 
 ---
 
@@ -105,5 +105,5 @@ Result: USB and external drives are disabled for all users in the **Accounts OU*
 
 ## Author
 
-**Aliu B. Sanusi**  
+**CHINAZA M. OKEKE**  
 Cybersecurity Analyst  
