@@ -87,11 +87,14 @@ Result: Command disabled for all users in the **HR OU**.
 
 ## Screenshots
 
-- AD Domain Structure
-- GPO Editor Screenshot
-- PC joined to domain
+- [AD Domain Structure](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/OUS-group-and-user.png)
+- [GPO Editor Screenshot](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/group-poilcy-management.png)
+- [PC joined to domain](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/windows-machine-connection.png)
 - [Result of denied command to shutdown, restart access](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/Access-to-shutdown-denied.png)
-
+- [Control Panael Access Denied](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/control-panal-disable.png)
+- [Access To CommandPrompt Denied](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/access-to-CommandPrompt-denied.jpeg)
+- 
+- 
 ---
 
 ## Key Takeaways
