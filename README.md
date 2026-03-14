@@ -93,8 +93,6 @@ Result: Command disabled for all users in the **HR OU**.
 - [Result of denied command to shutdown, restart access](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/Access-to-shutdown-denied.png)
 - [Control Panael Access Denied](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/control-panal-disable.png)
 - [Access To CommandPrompt Denied](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/access-to-CommandPrompt-denied.jpeg)
-- 
-- 
 ---
 
 ## Key Takeaways
