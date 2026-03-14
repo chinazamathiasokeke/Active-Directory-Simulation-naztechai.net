@@ -90,7 +90,7 @@ Result: Command disabled for all users in the **HR OU**.
 - AD Domain Structure
 - GPO Editor Screenshot
 - PC joined to domain
-- Result of denied command to shutdown, restart access
+- [Result of denied command to shutdown, restart access](https://github.com/chinazamathiasokeke/Active-Directory-Simulation-naztechai.net/blob/main/screenshots/Access-to-shutdown-denied.png)
 
 ---
 
